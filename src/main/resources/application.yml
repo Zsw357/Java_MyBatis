@@ -1,1 +1,27 @@
+server:
+  port: 8087
 
+#????
+logging:
+  level:
+    com:
+      example:
+        java_mybatis: debug
+
+#???
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3308/ZSWDB?useUnicode=true&characterEncoding=utf-8&userSSL=true&serverTimezone=UTC
+    username: root
+    password: root
+
+#MyBatis
+mybatis:
+  # Mapper?????? classpath????? resources ???
+  mapper-locations: classpath:/mapper/*.xml
+  # ????????,Ming = m-ing
+  configuration:
+    map-underscore-to-camel-case: true
+  # ? - ??
+  type-aliases-package: com.example.java_mybatis.pojo
