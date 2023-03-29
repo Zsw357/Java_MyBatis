@@ -10,7 +10,7 @@ import java.util.List;
 
 /**
  * @author Zsw
- * @create 2023-03-28 16:39
+ * &#064;create  2023-03-28 16:39
  */
 
 @RestController
@@ -21,7 +21,6 @@ public class UserController {
 
     @GetMapping("/user")
     public List<User> getUserAll(){
-        List<User> allUser = userService.findUserAll();
-        return allUser;
+        return userService.findUserAll();
     }
 }
