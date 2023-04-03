@@ -15,4 +15,7 @@ import java.util.List;
 
 public interface IUserService {
     List<User> findUserAll();
+    List<User> findUserById(int id);
+    int userInsert(User user);
+    int lmd();
 }

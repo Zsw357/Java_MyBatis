@@ -13,4 +13,8 @@ import java.util.List;
 @Mapper
 public interface IUser {
     List<User> findUserAll();
+    List<User> findUserById(int id);
+    int userInsert(User user);
 }
+
+

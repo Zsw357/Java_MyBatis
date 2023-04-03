@@ -10,6 +10,9 @@ logging:
 
 #???
 spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3308/ZSWDB?useUnicode=true&characterEncoding=utf-8&userSSL=true&serverTimezone=UTC
@@ -25,3 +28,4 @@ mybatis:
     map-underscore-to-camel-case: true
   # ? - ??
   type-aliases-package: com.example.java_mybatis.pojo
+

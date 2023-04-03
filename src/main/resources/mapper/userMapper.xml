@@ -5,5 +5,15 @@
         select * from user ;
     </select>
 
+    <select id="findUserById" resultType="User" parameterType="int">
+        select * from user where id = #{id};
+    </select>
+
+    <insert id="userInsert"  parameterType="User">
+        insert into user(id,name) values (#{id},#{name});
+    </insert>
+
+   <!-- 动态SQL学习 -->
+
 
 </mapper>
