@@ -15,7 +15,7 @@ import java.util.List;
  * @author Zsw
  * &#064;create  2023-03-28 16:39
  */
-
+@SuppressWarnings("all")//抑制警告
 @Api(tags = "用户接口")
 @RestController
 public class UserController {
